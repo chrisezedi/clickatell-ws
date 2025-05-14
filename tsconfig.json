@@ -4,10 +4,13 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/socket-server-e2e"
+      "path": "./apps/socket-server"
     },
     {
-      "path": "./apps/socket-server"
+      "path": "./apps/activity-tracker"
+    },
+    {
+      "path": "./product-catalog"
     }
   ]
 }

@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "declarationMap": true,
-    "emitDeclarationOnly": true,
+    // Only apply solution-style settings to non-Angular parts of the workspace
+    // "composite": true,
+    // "declarationMap": true,
+    // "emitDeclarationOnly": true,
     "importHelpers": true,
     "isolatedModules": true,
-    "lib": ["es2022"],
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+    "lib": ["es2022", "dom"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
@@ -15,7 +16,14 @@
     "noUnusedLocals": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2022",
-    "customConditions": ["development"]
+    "target": "ES2022",
+    "useDefineForClassFields": false,
+    "customConditions": ["development"],
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@clickatell-ws/product-catalog": ["product-catalog/src/main.ts"],
+      "@clickatell-ws/product-catalog/*": ["product-catalog/src/*"]
+    }
   }
 }
