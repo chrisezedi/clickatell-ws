@@ -1,5 +1,8 @@
 {
   "name": "@clickatell-ws/activity-tracker",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3"
+  }
 }

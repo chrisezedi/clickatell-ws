@@ -1,9 +1,4 @@
-interface State {activities:string[],initialState:string[]}
-
-interface Action {
-  type:string;
-  payload:string;
-}
+import { Action, State } from "./models";
 
 const searchResults = (state:State,keyword:string) => {
   if (keyword.length > 0) {
