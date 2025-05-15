@@ -5,13 +5,13 @@ import { resolve } from 'path';
 
 export default defineConfig(() => ({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/activity-tracker',
+  cacheDir: '../../node_modules/.vite/apps/product-catalog',
   server: {
-    port: 4200,
+    port: 4201, // Using 4201 since 4200 might be used by activity-tracker
     host: 'localhost',
   },
   preview: {
-    port: 4300,
+    port: 4301,
     host: 'localhost',
   },
   plugins: [react()],
@@ -35,3 +35,4 @@ export default defineConfig(() => ({
     }
   },
 }));
+
