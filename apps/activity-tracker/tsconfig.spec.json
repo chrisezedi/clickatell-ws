@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./out-tsc/jest",
+    "tsBuildInfoFile": "./out-tsc/jest/tsconfig.spec.tsbuildinfo",
     "jsx": "react-jsx",
     "types": [
       "jest",

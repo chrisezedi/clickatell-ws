@@ -22,8 +22,8 @@
     "declaration": true,
     "baseUrl": ".",
     "paths": {
-      "@clickatell-ws/product-catalog": ["product-catalog/src/main.ts"],
-      "@clickatell-ws/product-catalog/*": ["product-catalog/src/*"]
+      "@clickatell-ws/product-catalog": ["apps/product-catalog/src/main.ts"],
+      "@clickatell-ws/product-catalog/*": ["apps/product-catalog/src/*"]
     }
   }
 }
