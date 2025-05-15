@@ -20,7 +20,7 @@
         "assets": [
           {
             "glob": "favicon.ico",
-            "input": "apps/product-catalog/src",
+            "input": "apps/product-catalog/public",
             "output": "/"
           },
           {

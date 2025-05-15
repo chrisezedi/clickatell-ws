@@ -1,2 +1,8 @@
-<app-nx-welcome></app-nx-welcome>
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+<main>
+  @if(loading() && categories.isLoading()){
+  <p class="text-center">fetching products...</p>
+  } @else {
+    <app-product [products]="products()!" [categories]="categories.value()!" (filterByCategory)="filterByCategory($event)" />
+  }
+</main>
